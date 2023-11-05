@@ -4,48 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/bafaee5caa.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/bafaee5caa.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Challenge</title>
   </head>
+
   <body>
     <div class="auth-page__container">
-      <img src="/frontend/assets/img/pexels-spencer-davis-4393021.jpg" alt="">
+      <img src="/frontend/assets/img/pexels-spencer-davis-4393021.jpg" alt="" />
       <div class="auth-page__sign-in">
         <header class="auth-page__header">Inicia sesion</header>
         <form class="auth-page__form">
-          <label for="">
+          <label for="sign-in__user-name">
             User name
-            <input type="text" />
+            <input
+              type="text"
+              name="sign-in__user-name"
+              id="sign-in__user-name"
+            />
           </label>
-          <label for="">
+          <label for="sing-in__password">
             Password
-            <input type="password" />
+            <input
+              type="password"
+              name="sing-in__password"
+              id="sing-in__password"
+            />
           </label>
           <input type="submit" value="Sign in" />
         </form>
-        </div>
+      </div>
 
-        <div class="horizontal-line"></div>
-        
-        <div class="auth-page__sign-up">
-          <header class="auth-page__header">Registrate gratis...</header>
-          <form class="auth-page__form">
-            <label for="">
-              E-mail
-              <input type="email" />
-            </label>
-            <label for="">
-              User name
-              <input type="text" />
-            </label>
-            <label for="">
-              Password
-              <input type="password" />
-            </label>
-            <input type="submit" value="Sign up" />
-          </form>
-        </div>
+      <div class="horizontal-line"></div>
+
+      <div class="auth-page__sign-up">
+        <header class="auth-page__header">Registrate gratis...</header>
+        <form class="auth-page__form" id="sign-up__form">
+          <label for="signUpEmail">
+            E-mail
+            <input type="email" name="email" required/>
+          </label>
+          <label for="signUpUserName">
+            User name
+            <input type="text" name="userName" required/>
+          </label>
+          <label for="signUpPassword">
+            Password
+            <input type="password" name="password" required/>
+          </label>
+          <input type="submit" value="Sign up" id="sign-up__button" />
+        </form>
       </div>
     </div>
+
+    <script src="index.js" type="module"></script>
   </body>
 </html>
