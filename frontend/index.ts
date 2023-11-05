@@ -1,4 +1,4 @@
-import { Register } from "./script.js";
+import { Register } from "./Register.js";
 import { SignUpFormInterface } from "./register/Form.interface.js";
 
 const signUpForm = document.getElementById("sign-up__form") as HTMLFormElement &

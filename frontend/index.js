@@ -1,4 +1,4 @@
-import { Register } from "./script.js";
+import { Register } from "./Register.js";
 const signUpForm = document.getElementById("sign-up__form");
 // Function that allows to sign up a new user.
 signUpForm.addEventListener("submit", async (e) => {

@@ -41,6 +41,12 @@
       "userName": "tomaco",
       "email": "dfvdf@ff.ff",
       "password": "123123123123"
+    },
+    {
+      "id": 8,
+      "userName": "valentina",
+      "email": "valita@vale.com",
+      "password": "123812847"
     }
   ]
 }
