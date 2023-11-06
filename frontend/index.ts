@@ -49,4 +49,3 @@ logInForm.addEventListener("submit", async (e) => {
   await userAccess.authAccess();
   await userAccess.goHome();
 });
-

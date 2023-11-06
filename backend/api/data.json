@@ -34,6 +34,13 @@
       "email": "emily.wilson@example.com",
       "password": "qwerty123",
       "isLoggedIn": false
+    },
+    {
+      "id": 6,
+      "userName": "asdasd",
+      "email": "a@gmail.com",
+      "password": "1234",
+      "isLoggedIn": false
     }
   ]
 }
