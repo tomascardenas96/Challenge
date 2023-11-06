@@ -16,22 +16,14 @@
       <img src="/frontend/assets/img/pexels-spencer-davis-4393021.jpg" alt="" />
       <div class="auth-page__sign-in">
         <header class="auth-page__header">Inicia sesion</header>
-        <form class="auth-page__form">
-          <label for="sign-in__user-name">
-            User name
-            <input
-              type="text"
-              name="sign-in__user-name"
-              id="sign-in__user-name"
-            />
+        <form class="auth-page__form" id="log-in__form">
+          <label for="email">
+            E-mail
+            <input type="text" name="email" required />
           </label>
-          <label for="sing-in__password">
+          <label for="password">
             Password
-            <input
-              type="password"
-              name="sing-in__password"
-              id="sing-in__password"
-            />
+            <input type="password" name="password" required />
           </label>
           <input type="submit" value="Sign in" />
         </form>
@@ -42,17 +34,17 @@
       <div class="auth-page__sign-up">
         <header class="auth-page__header">Registrate gratis...</header>
         <form class="auth-page__form" id="sign-up__form">
-          <label for="signUpEmail">
+          <label for="email">
             E-mail
-            <input type="email" name="email" required/>
+            <input type="email" name="email" required />
           </label>
-          <label for="signUpUserName">
+          <label for="userName">
             User name
-            <input type="text" name="userName" required/>
+            <input type="text" name="userName" required />
           </label>
-          <label for="signUpPassword">
+          <label for="password">
             Password
-            <input type="password" name="password" required/>
+            <input type="password" name="password" required />
           </label>
           <input type="submit" value="Sign up" id="sign-up__button" />
         </form>
