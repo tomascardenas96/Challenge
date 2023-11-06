@@ -34,13 +34,6 @@
       "email": "emily.wilson@example.com",
       "password": "qwerty123",
       "isLoggedIn": false
-    },
-    {
-      "id": 6,
-      "userName": "Tomas Cardenas",
-      "email": "tomicardenas96@gmail.com",
-      "password": "Tomi500420",
-      "isLoggedIn": true
     }
   ]
 }
