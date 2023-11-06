@@ -30,7 +30,7 @@ signUpForm.addEventListener("submit", async (e) => {
   }
 });
 
-// Function made to grant access
+// Function made to grant access.
 logInForm.addEventListener("submit", async(e) => {
   e.preventDefault();
 
@@ -44,4 +44,5 @@ logInForm.addEventListener("submit", async(e) => {
 
   const userAccess: Login = new Login(userData);
   await userAccess.authAccess();
+  await userAccess.goHome();
 })

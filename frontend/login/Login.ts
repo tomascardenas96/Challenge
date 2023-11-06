@@ -20,7 +20,11 @@ export class Login {
     if(matchingData) {
        this.isLoggedIn = true;
     } else {
-        console.log("Nope");
+        alert("Email or password incorrect, please try again.")
     }
+  }
+
+  goHome() {
+    this.isLoggedIn ?  window.location.href = "/frontend/home.html" :  window.location.href = "/frontend";
   }
 }
