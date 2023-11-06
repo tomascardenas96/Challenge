@@ -12,6 +12,7 @@ signUpForm.addEventListener("submit", async (e) => {
         userName: signUpUserName,
         email: signUpEmail,
         password: signUpPassword,
+        isLoggedIn: false
     };
     const testUser = new Register(newUser);
     try {
@@ -28,7 +29,7 @@ logInForm.addEventListener("submit", async (e) => {
     const logInPassword = logInForm.password.value;
     const userData = {
         email: logInEmail,
-        password: logInPassword
+        password: logInPassword,
     };
     const userAccess = new Login(userData);
     await userAccess.authAccess();

@@ -29,4 +29,21 @@ export class UsersService {
     });
     return addedUser;
   }
+
+  async updateUser(id:number, user: usersDTO) {
+    const { userName, email, password, isLoggedIn } = user;
+    const updatedUser = {
+      id: id,
+      userName: userName,
+      email: email,
+      password: password,
+      isLoggedIn: isLoggedIn
+    };
+    const res = await fetch(`http://localhost:3100/users/${id}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(updatedUser),
+    });
+    return updatedUser;
+  }
 }

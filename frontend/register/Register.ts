@@ -1,16 +1,13 @@
-export class Register {
-  private user: any = {
-    userName: "",
-    email: "",
-    password: "",
-  };
+import { UsersDTO } from "../users/Users.dto";
 
-  constructor(user: any) {
+export class Register {
+  private user: UsersDTO;
+
+  constructor(user: UsersDTO) {
     this.user = user;
   }
 
   async addNewUser(): Promise<void> {
-    console.log("wiejfwef");
     const add = await fetch("http://localhost:3900/users", {
       method: "POST",
       headers: { "Content-Type": "application/json" },

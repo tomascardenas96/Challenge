@@ -4,73 +4,43 @@
       "id": 1,
       "userName": "john_doe",
       "email": "john.doe@example.com",
-      "password": "password123"
+      "password": "pass",
+      "isLoggedIn": false
     },
     {
       "id": 2,
       "userName": "alice_smith",
       "email": "alice.smith@example.com",
-      "password": "securePass!23"
+      "password": "securePass!23",
+      "isLoggedIn": false
     },
     {
       "id": 3,
       "userName": "bob_jones",
       "email": "bob.jones@example.com",
-      "password": "mySecretPass"
+      "password": "mySecretPass",
+      "isLoggedIn": false
     },
     {
       "id": 4,
       "userName": "linda_miller",
       "email": "linda.miller@example.com",
-      "password": "P@ssw0rd"
+      "password": "P@ssw0rd",
+      "isLoggedIn": false
     },
     {
       "id": 5,
       "userName": "emily_wilson",
       "email": "emily.wilson@example.com",
-      "password": "qwerty123"
+      "password": "qwerty123",
+      "isLoggedIn": false
     },
     {
       "id": 6,
-      "userName": "rrrrrrrrr",
-      "email": "ERBERB@GMAIL.COM",
-      "password": "111222333444"
-    },
-    {
-      "id": 7,
-      "userName": "tomaco",
-      "email": "dfvdf@ff.ff",
-      "password": "123123123123"
-    },
-    {
-      "id": 8,
-      "userName": "valentina",
-      "email": "valita@vale.com",
-      "password": "123812847"
-    },
-    {
-      "id": 9,
-      "userName": "qefqe",
-      "email": "mica@gmail.com",
-      "password": "2222"
-    },
-    {
-      "id": 10,
-      "userName": "qwdqwe",
-      "email": "pepepe@ttt.com",
-      "password": "ddddddd"
-    },
-    {
-      "id": 11,
-      "userName": "www",
-      "email": "a@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": 12,
-      "userName": "ccc",
-      "email": "mica@gmail.com",
-      "password": "wcwec"
+      "userName": "Tomas Cardenas",
+      "email": "tomicardenas96@gmail.com",
+      "password": "Tomi500420",
+      "isLoggedIn": true
     }
   ]
 }
