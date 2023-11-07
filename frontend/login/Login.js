@@ -14,6 +14,7 @@ export class Login {
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(foundUser),
             });
+            localStorage.setItem("userIsLogged", "true");
             return true;
         }
         else {
@@ -21,10 +22,10 @@ export class Login {
             return false;
         }
     }
-    async goHome() {
-        const isAuthorized = await this.authAccess();
-        isAuthorized
+    static goHome() {
+        const isAuthorized = localStorage.getItem("userIsLogged");
+        isAuthorized === "true"
             ? (window.location.href = "/frontend/pages/home/home.html")
-            : (window.location.href = "/frontend");
+            : null;
     }
 }

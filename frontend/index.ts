@@ -10,7 +10,8 @@ const signUpForm = document.getElementById("sign-up__form") as HTMLFormElement &
 const logInForm = document.getElementById("log-in__form") as HTMLFormElement &
   LogInFormInterface;
 
-// Function that allows to sign up a new user.
+// Function that allows to sign up a new user. It is created a new instance from Register class
+// With given data of final user.
 signUpForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 
@@ -29,7 +30,7 @@ signUpForm.addEventListener("submit", async (e) => {
   try {
     await testUser.addNewUser();
   } catch (error) {
-    throw new Error();
+    throw new Error("Has ocurred an error in sign up request, please try again.");
   }
 });
 
@@ -46,6 +47,12 @@ logInForm.addEventListener("submit", async (e) => {
   };
 
   const userAccess: Login = new Login(userData);
-  await userAccess.authAccess();
-  await userAccess.goHome();
+  try{
+    await userAccess.authAccess();
+  } catch(error) {
+    throw new Error("Has ocurred an error while login, please try again.")
+  }
 });
+
+// Static function used for redirect automatically to home if it's required.
+Login.goHome();

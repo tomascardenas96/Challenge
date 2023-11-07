@@ -4,11 +4,11 @@ import { UsersInterface } from "../users/Users.interface.js";
 
 export class Login {
   private user: UsersDTO;
-  
+
   constructor(user: UsersDTO) {
     this.user = user;
   }
-  
+
   async authAccess(): Promise<boolean> {
     const usersData: UsersInterface[] = await fetchData();
     const matchingData = usersData.find(
@@ -23,6 +23,7 @@ export class Login {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(foundUser),
       });
+      localStorage.setItem("userIsLogged", "true");
       return true;
     } else {
       alert("Email or password incorrect, please try again.");
@@ -30,10 +31,10 @@ export class Login {
     }
   }
 
-  async goHome(): Promise<void> {
-    const isAuthorized = await this.authAccess();
-    isAuthorized
+  static goHome() {
+    const isAuthorized: (string | null) = localStorage.getItem("userIsLogged");
+    isAuthorized === "true"
       ? (window.location.href = "/frontend/pages/home/home.html")
-      : (window.location.href = "/frontend");
+      : null;
   }
 }

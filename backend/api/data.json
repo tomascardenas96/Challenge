@@ -41,6 +41,27 @@
       "email": "a@gmail.com",
       "password": "1234",
       "isLoggedIn": false
+    },
+    {
+      "id": 7,
+      "userName": "facundo bitar",
+      "email": "facundo@gmail.com",
+      "password": "1234",
+      "isLoggedIn": false
+    },
+    {
+      "id": 8,
+      "userName": "Micaela Aguilar",
+      "email": "mica@gmail.com",
+      "password": "1234",
+      "isLoggedIn": true
+    },
+    {
+      "id": 9,
+      "userName": "Tomas Cardenas",
+      "email": "tomi@gmail.com",
+      "password": "1234",
+      "isLoggedIn": false
     }
   ]
 }
