@@ -16,7 +16,7 @@ export class Home {
     async greetUser() {
         const h1UserName = document.getElementById("user-name");
         const nameToGiveGreets = (await this.checkUserLoggedIn()).userName;
-        h1UserName.innerText = `Bienvenido/a ${nameToGiveGreets}!!`;
+        h1UserName.innerText = `${nameToGiveGreets}`;
     }
     // Log out user, this function modify data arrived from server, changing his boolean value.
     // Also create a local storage value to work through updated data.   

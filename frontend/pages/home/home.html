@@ -1,13 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/bafaee5caa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css" />
     <title>Bienvenido!</title>
-</head>
-<body>
-    <h1 id="user-name"></h1>
-    <button id="log-out">Cerrar sesion</button>
+  </head>
+
+  <body>
+    <main class="home-page__container">
+      <header class="home-page__cover-photo">
+        <img
+          src="../../assets/img/cover-photo.jpg"
+          alt=""
+          class="home-page__cover-photo__img"
+        />
+        <div class="home-page__profile-photo">
+          <img
+            src="https://blogger.googleusercontent.com/img/a/AVvXsEh-WKe00-hlzFOP1aYnZlKwJJ42mtBx82f4zyLZKUJ3ff2eE6biYdTXDwiPNvXYTOOFaRC_wev3s88_EWt-jTGTOPPt7Vhc7C4-hwKZmlDT5IKoOfMMz8Zirr87khpO9ssGGX4xCVePi73SHtfDe8drRYI6CnehjijlN47TQjFsKii4T3Be2lWiaauG=s16000-rw"
+            alt=""
+          />
+        </div>
+      </header>
+      <div class="home-page__menu">
+        <div class="home-page__menu-half">
+          <h1 id="user-name"></h1>
+        </div>
+        <div class="home-page__menu-half">
+          <ul class="home-page__menu-list">
+            <li><i class="fa-solid fa-house"></i>Inicio</li>
+            <li><i class="fa-solid fa-magnifying-glass"></i>Buscar</li>
+            <li><i class="fa-solid fa-gear"></i>Configuracion</li>
+            <li id="log-out"><i class="fa-solid fa-door-open"></i>Salir</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="home-page__main">
+        <aside class="home-page__photos">
+          <div></div>
+        </aside>
+
+        <aside class="home-page__hero">
+          <div class="home-page__hero-container">
+            <div><h1>Publicaciones...</h1></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </aside>
+      </div>
+
+      <footer class="home-page__footer">
+        <p>All rights reserved ©</p>
+      </footer>
+    </main>
+
     <script src="./home.js" type="module"></script>
-</body>
+  </body>
 </html>

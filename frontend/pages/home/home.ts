@@ -25,7 +25,7 @@ export class Home {
       "user-name"
     ) as HTMLSpanElement;
     const nameToGiveGreets = (await this.checkUserLoggedIn()).userName;
-    h1UserName.innerText = `Bienvenido/a ${nameToGiveGreets}!!`;
+    h1UserName.innerText = `${nameToGiveGreets}`;
   }
 
   // Log out user, this function modify data arrived from server, changing his boolean value.
