@@ -44,6 +44,7 @@ logInForm.addEventListener("submit", async (e) => {
   const userData: UsersDTO = {
     email: logInEmail,
     password: logInPassword,
+    isLoggedIn: true
   };
 
   const userAccess: Login = new Login(userData);

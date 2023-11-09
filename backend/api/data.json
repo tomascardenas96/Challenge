@@ -23,59 +23,10 @@
     },
     {
       "id": 4,
-      "userName": "linda_miller",
-      "email": "linda.miller@example.com",
-      "password": "P@ssw0rd",
-      "isLoggedIn": false
-    },
-    {
-      "id": 5,
-      "userName": "emily_wilson",
-      "email": "emily.wilson@example.com",
-      "password": "qwerty123",
-      "isLoggedIn": false
-    },
-    {
-      "id": 6,
-      "userName": "asdasd",
-      "email": "a@gmail.com",
+      "userName": "Facundo bitar",
+      "email": "facu@gmail.com",
       "password": "1234",
-      "isLoggedIn": false
-    },
-    {
-      "id": 7,
-      "userName": "facundo bitar",
-      "email": "facundo@gmail.com",
-      "password": "1234",
-      "isLoggedIn": false
-    },
-    {
-      "id": 8,
-      "userName": "Micaela Aguilar",
-      "email": "mica@gmail.com",
-      "password": "1234",
-      "isLoggedIn": false
-    },
-    {
-      "id": 9,
-      "userName": "Tomas Cardenas",
-      "email": "tomi@gmail.com",
-      "password": "1234",
-      "isLoggedIn": false
-    },
-    {
-      "id": 10,
-      "userName": "Tomas Cardenas",
-      "email": "tomicardenas@gmail.com",
-      "password": "1234",
-      "isLoggedIn": false
-    },
-    {
-      "id": 11,
-      "userName": "Roberto Valenzuela",
-      "email": "roberto@gmail.com",
-      "password": "1234",
-      "isLoggedIn": false
+      "isLoggedIn": true
     }
   ]
 }

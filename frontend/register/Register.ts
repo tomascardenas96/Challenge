@@ -8,10 +8,15 @@ export class Register {
   }
 
   async addNewUser(): Promise<void> {
-    const add = await fetch("http://localhost:3900/users", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(this.user),
-    });
+    try {
+      const add = await fetch("http://localhost:3900/users", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(this.user),
+      });
+      alert("Account created successfully");
+    } catch(error) {
+      throw new Error("Error trying to create a new account")
+    }
   }
 }
