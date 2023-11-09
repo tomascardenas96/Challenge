@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/bafaee5caa.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/bafaee5caa.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="home.css" />
     <title>Bienvenido!</title>
   </head>
@@ -34,20 +37,33 @@
             <li><i class="fa-solid fa-gear"></i>Configuracion</li>
             <li id="log-out"><i class="fa-solid fa-door-open"></i>Salir</li>
           </ul>
+          <i class="fa-solid fa-bars" id="burguer-menu"></i>
         </div>
       </div>
+      <menu
+        class="home-page__menu-half__burguer-menu"
+        id="burguer-menu__open-close"
+      >
+        <ul>
+          <li><i class="fa-solid fa-house"></i>Inicio</li>
+          <li><i class="fa-solid fa-magnifying-glass"></i>Buscar</li>
+          <li><i class="fa-solid fa-gear"></i>Configuracion</li>
+          <li id="log-out"><i class="fa-solid fa-door-open"></i>Salir</li>
+        </ul>
+      </menu>
 
       <div class="home-page__main">
+        <h1 class="home-page__main__user-name" id="user-name2"></h1>
         <aside class="home-page__photos">
-          <div></div>
+          <div>Fotos</div>
         </aside>
 
         <aside class="home-page__hero">
           <div class="home-page__hero-container">
             <div><h1>Publicaciones...</h1></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
           </div>
         </aside>
       </div>

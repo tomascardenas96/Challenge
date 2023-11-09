@@ -21,15 +21,15 @@ export class Home {
 
   // Greet user by his user name.
   async greetUser() {
-    const h1UserName = document.getElementById(
-      "user-name"
-    ) as HTMLSpanElement;
+    const h1UserName = document.getElementById("user-name") as HTMLSpanElement;
+    const h1UserName2 = document.getElementById("user-name2") as HTMLSpanElement;
     const nameToGiveGreets = (await this.checkUserLoggedIn()).userName;
+    h1UserName2.innerText = `${nameToGiveGreets}`;
     h1UserName.innerText = `${nameToGiveGreets}`;
   }
 
   // Log out user, this function modify data arrived from server, changing his boolean value.
-  // Also create a local storage value to work through updated data.   
+  // Also create a local storage value to work through updated data.
   async logOut() {
     const logOutBtn = document.getElementById("log-out") as HTMLButtonElement;
     const userCurrentlyLoggedIn = await this.checkUserLoggedIn();
@@ -49,6 +49,19 @@ export class Home {
     });
   }
 
+  openMenu() {
+    const menu = document.getElementById("burguer-menu") as HTMLIFrameElement;
+    const menuOpenClose = document.getElementById(
+      "burguer-menu__open-close"
+    ) as HTMLDivElement;
+
+    menu.addEventListener("click", () => {
+      menuOpenClose.style.display === "flex"
+        ? (menuOpenClose.style.display = "none")
+        : (menuOpenClose.style.display = "flex");
+    });
+  }
+
   // Here it is verified if there some logged in user or not.
   // In negative case, will redirect to login page.
   async redirect() {
@@ -64,3 +77,4 @@ const homePage = new Home();
 homePage.greetUser();
 homePage.logOut();
 homePage.redirect();
+homePage.openMenu();

@@ -15,11 +15,13 @@ export class Home {
     // Greet user by his user name.
     async greetUser() {
         const h1UserName = document.getElementById("user-name");
+        const h1UserName2 = document.getElementById("user-name2");
         const nameToGiveGreets = (await this.checkUserLoggedIn()).userName;
+        h1UserName2.innerText = `${nameToGiveGreets}`;
         h1UserName.innerText = `${nameToGiveGreets}`;
     }
     // Log out user, this function modify data arrived from server, changing his boolean value.
-    // Also create a local storage value to work through updated data.   
+    // Also create a local storage value to work through updated data.
     async logOut() {
         const logOutBtn = document.getElementById("log-out");
         const userCurrentlyLoggedIn = await this.checkUserLoggedIn();
@@ -38,6 +40,15 @@ export class Home {
             }
         });
     }
+    openMenu() {
+        const menu = document.getElementById("burguer-menu");
+        const menuOpenClose = document.getElementById("burguer-menu__open-close");
+        menu.addEventListener("click", () => {
+            menuOpenClose.style.display === "flex"
+                ? (menuOpenClose.style.display = "none")
+                : (menuOpenClose.style.display = "flex");
+        });
+    }
     // Here it is verified if there some logged in user or not.
     // In negative case, will redirect to login page.
     async redirect() {
@@ -51,3 +62,4 @@ const homePage = new Home();
 homePage.greetUser();
 homePage.logOut();
 homePage.redirect();
+homePage.openMenu();

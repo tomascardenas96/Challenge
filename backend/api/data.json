@@ -26,7 +26,28 @@
       "userName": "Facundo bitar",
       "email": "facu@gmail.com",
       "password": "1234",
+      "isLoggedIn": false
+    },
+    {
+      "id": 5,
+      "userName": "Micaela Aguilar",
+      "email": "mica@gmail.com",
+      "password": "1234",
       "isLoggedIn": true
+    },
+    {
+      "id": 6,
+      "userName": "Milagros Aguilar",
+      "email": "mili@gmail.com",
+      "password": "1234",
+      "isLoggedIn": false
+    },
+    {
+      "id": 7,
+      "userName": "Ignacio Cardenas",
+      "email": "igna@gmail.com",
+      "password": "1234",
+      "isLoggedIn": false
     }
   ]
 }

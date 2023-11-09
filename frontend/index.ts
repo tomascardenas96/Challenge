@@ -4,6 +4,7 @@ import { SignUpFormInterface } from "./register/Form.interface.js";
 import { LogInFormInterface } from "./login/Login.interface.js";
 import { UsersInterface } from "./users/Users.interface.js";
 import { UsersDTO } from "./users/Users.dto.js";
+import { Home } from "./pages/home/home.js";
 
 const signUpForm = document.getElementById("sign-up__form") as HTMLFormElement &
   SignUpFormInterface;
