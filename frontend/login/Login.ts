@@ -32,7 +32,7 @@ export class Login {
   }
 
   static goHome() {
-    const isAuthorized: (string | null) = localStorage.getItem("userIsLogged");
+    const isAuthorized: string | null = localStorage.getItem("userIsLogged");
     isAuthorized === "true"
       ? (window.location.href = "/frontend/pages/home/home.html")
       : null;

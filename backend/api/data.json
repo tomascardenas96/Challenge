@@ -1,17 +1,10 @@
 {
   "users": [
     {
-      "id": 1,
-      "userName": "john_doe",
-      "email": "john.doe@example.com",
-      "password": "pass",
-      "isLoggedIn": false
-    },
-    {
       "id": 2,
-      "userName": "alice_smith",
-      "email": "alice.smith@example.com",
-      "password": "securePass!23",
+      "userName": "pedro",
+      "email": "pedro@gmail.com",
+      "password": "pass",
       "isLoggedIn": false
     },
     {
@@ -26,7 +19,7 @@
       "userName": "Facundo bitar",
       "email": "facu@gmail.com",
       "password": "1234",
-      "isLoggedIn": true
+      "isLoggedIn": false
     },
     {
       "id": 5,
@@ -37,15 +30,8 @@
     },
     {
       "id": 6,
-      "userName": "Milagros Aguilar",
-      "email": "mili@gmail.com",
-      "password": "1234",
-      "isLoggedIn": false
-    },
-    {
-      "id": 7,
-      "userName": "Ignacio Cardenas",
-      "email": "igna@gmail.com",
+      "userName": "Tomas Cardenas",
+      "email": "tomi@gmail.com",
       "password": "1234",
       "isLoggedIn": false
     }
