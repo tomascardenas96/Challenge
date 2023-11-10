@@ -33,7 +33,7 @@
       "userName": "Micaela Aguilar",
       "email": "mica@gmail.com",
       "password": "1234",
-      "isLoggedIn": true
+      "isLoggedIn": false
     },
     {
       "id": 6,

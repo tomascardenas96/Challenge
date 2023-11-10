@@ -110,7 +110,7 @@ img {
 
 .horizontal-line {
   border: 1px solid rgba(0, 0, 0, 0.068);
-  height: 90%;
+  min-height: 36rem;
 }
 
 @media screen and (max-width: 1200px) and (max-height: 800px) {
