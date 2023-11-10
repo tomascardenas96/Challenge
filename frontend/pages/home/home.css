@@ -36,7 +36,7 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, 0);
-  box-shadow: 0 0 4px 1px #75A22A;
+  box-shadow: 0 0 4px 1px #789383;
 }
 
 .home-page__profile-photo img {
@@ -51,16 +51,15 @@ html {
   width: 100%;
   height: 100%;
   opacity: 0.8;
-  filter: blur(3px);
 }
 
 .home-page__menu {
   width: 100%;
   min-height: 3rem;
-  margin: 0.3rem 0 0 0;
+  margin: 0.1rem 0 0 0;
   display: flex;
   justify-content: space-between;
-  background-color: #74a22ad5;
+  background-color: #789383;
   /* box-shadow: 0 0 10px 1px #202a21da; */
 }
 
@@ -174,6 +173,7 @@ html {
   align-items: center;
   justify-content: center;
   font-size: 1.7rem;
+  color: #73656A;
 }
 
 .home-page__hero {
@@ -201,11 +201,12 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #73656A;
 }
 
 .home-page__hero-container div:first-child {
   flex-grow: 1;
-  color: #000;
+  color: #73656A;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,7 +219,7 @@ html {
 .home-page__footer {
   width: 100%;
   height: 2.5rem;
-  background-color: #75A22A;
+  background-color: #789383;
   display: flex;
   align-items: center;
   justify-content: center;

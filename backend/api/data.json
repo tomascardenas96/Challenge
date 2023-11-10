@@ -26,7 +26,7 @@
       "userName": "Facundo bitar",
       "email": "facu@gmail.com",
       "password": "1234",
-      "isLoggedIn": false
+      "isLoggedIn": true
     },
     {
       "id": 5,
