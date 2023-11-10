@@ -1,0 +1,37 @@
+Título del Challenge: Desarrollo de una Aplicación Web de Registro de Usuarios
+
+Descripción del Desafío: El objetivo de este desafío es evaluar las habilidades
+de los postulantes en la construcción de una aplicación web simple que permita a los usuarios registrarse
+y acceder a su perfil. La aplicación debe ser desarrollada utilizando HTML, CSS, TypeScript y un servidor backend sencillo
+(puede ser en Node.js, Python, u otro lenguaje que los postulantes conozcan).
+ 
+Requisitos:
+Página de Registro:
+Crear una página de registro que incluya campos para el nombre de usuario, correo electrónico y contraseña.
+Validar que los campos no estén vacíos y que la dirección de correo electrónico tenga un formato válido.
+Al hacer clic en el botón de registro, los datos deben enviarse al servidor para su almacenamiento.
+
+Autenticación:
+Implementar una función de autenticación que permita a los usuarios iniciar sesión utilizando su dirección de correo electrónico y contraseña.
+Página de Perfil de Usuario:
+Después de iniciar sesión, el usuario debe ser redirigido a una página de perfil de usuario que muestre su nombre de usuario y un 
+mensaje de bienvenida.
+
+Backend:
+Crear un servidor backend simple que maneje las solicitudes de registro y autenticación de usuario.
+Almacenar la información del usuario (nombre, correo electrónico y contraseña) de manera segura.
+Puedes utilizar una base de datos sencilla o guardar los datos en un archivo JSON.
+
+Estilo y Diseño:
+Aplicar estilos CSS para que la aplicación sea atractiva y tenga una interfaz de usuario amigable.
+Programación Orientada a Objetos:
+Utilizar programación orientada a objetos en TypeScript para organizar y estructurar el código de la aplicación.
+
+Seguridad:
+Implementar medidas básicas de seguridad, como el almacenamiento seguro de contraseñas (hashing y salting) y la prevención de ataques
+de inyección de código.
+Entrega del Desafío: Los postulantes deben entregar el código fuente de su aplicación junto con instrucciones claras sobre cómo ejecutarla y probarla.
+
+Nota:
+Jr Adv = menos de una semana
+Jr = una semana o un poco mas
