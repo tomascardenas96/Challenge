@@ -159,5 +159,6 @@ img {
   .horizontal-line {
     border: 1px solid rgba(0, 0, 0, 0.068);
     width: 90%;
+    min-height: 0;
   }
 }
