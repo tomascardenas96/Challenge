@@ -8,11 +8,7 @@ export class Redirect {
     }
     redirectToProfile() {
         if (this.isAuth()) {
-            // Redirigir a la URL deseada
             window.location.href = "/frontend/pages/home/home.html";
-        }
-        else {
-            console.log('Inicio de sesión fallido. No se realizará la redirección.');
         }
     }
 }

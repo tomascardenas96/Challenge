@@ -5,16 +5,13 @@ export class Redirect {
     this.token = localStorage.getItem("token");
   }
 
-  isAuth(): boolean {
+  private isAuth(): boolean {
     return this.token !== null && this.token !== undefined;
   }
 
   redirectToProfile() {
     if (this.isAuth()) {
-        // Redirigir a la URL deseada
         window.location.href = "/frontend/pages/home/home.html";
-      } else {
-        console.log('Inicio de sesión fallido. No se realizará la redirección.');
       }
   }
 }
