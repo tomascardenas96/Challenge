@@ -20,7 +20,6 @@ export class Authentication {
     }
     logOut() {
         localStorage.removeItem("token");
-        localStorage.removeItem("userName");
         setTimeout(() => {
             window.location.reload();
         }, 300);
