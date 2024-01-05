@@ -8,10 +8,18 @@
       src="https://kit.fontawesome.com/bafaee5caa.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="index.js" type="module"></script>
     <title>Challenge</title>
   </head>
 
-  <body>
+  <>
+      <!-- Pantalla de carga -->
+  <div id="pantalla-carga">
+    <div class="spinner"></div>
+    <p>Cargando...</p>
+  </div>
+
+  <div id="contenido-principal" style="display: none;"></div>
     <div class="auth-page__container">
       <img src="/frontend/assets/img/pexels-spencer-davis-4393021.jpg" alt="" />
       <div class="auth-page__sign-in">
@@ -50,7 +58,7 @@
         </form>
       </div>
     </div>
+  </div>
 
-    <script src="index.js" type="module"></script>
   </body>
 </html>

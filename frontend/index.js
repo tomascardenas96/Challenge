@@ -1,10 +1,17 @@
-import { Register } from "./register/Register.js";
-import { Login } from "./login/Login.js";
+import { Authentication } from "./api/login.js";
+import { Redirect } from "./api/redirect.js";
 const signUpForm = document.getElementById("sign-up__form");
 const logInForm = document.getElementById("log-in__form");
-// Function that allows to sign up a new user. It is created a new instance from Register class
-// With given data of final user.
-signUpForm.addEventListener("submit", async (e) => {
+// Pantalla de carga: Muestra un spinner de loading mientras el script no este 100% cargado.
+document.addEventListener("DOMContentLoaded", function () {
+    const loadScreen = document.getElementById("pantalla-carga");
+    loadScreen.style.display = "none";
+    // Cuando carga el contenido, muestra la pantalla principal.
+    const mainScreen = document.getElementById("contenido-principal");
+    mainScreen.style.display = "block";
+});
+const user = new Authentication();
+signUpForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const signUpEmail = signUpForm.email.value;
     const signUpUserName = signUpForm.userName.value;
@@ -13,33 +20,24 @@ signUpForm.addEventListener("submit", async (e) => {
         userName: signUpUserName,
         email: signUpEmail,
         password: signUpPassword,
-        isLoggedIn: false
     };
-    const testUser = new Register(newUser);
-    try {
-        await testUser.addNewUser();
-    }
-    catch (error) {
-        throw new Error("Has ocurred an error in sign up request, please try again.");
-    }
+    user.register(newUser);
+    setTimeout(() => {
+        window.location.reload();
+    }, 300);
 });
-// Function made to grant access.
-logInForm.addEventListener("submit", async (e) => {
+logInForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const logInEmail = logInForm.email.value;
     const logInPassword = logInForm.password.value;
-    const userData = {
+    const userVerify = {
         email: logInEmail,
         password: logInPassword,
-        isLoggedIn: true
     };
-    const userAccess = new Login(userData);
-    try {
-        await userAccess.authAccess();
-    }
-    catch (error) {
-        throw new Error("Has ocurred an error while login, please try again.");
-    }
+    user.login(userVerify);
+    setTimeout(() => {
+        window.location.reload();
+    }, 300);
 });
-// Static function used for redirect automatically to home if it's required.
-Login.goHome();
+const redirect = new Redirect();
+redirect.redirectToProfile();

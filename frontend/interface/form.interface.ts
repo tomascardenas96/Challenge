@@ -3,3 +3,8 @@ export interface SignUpFormInterface {
   email: HTMLInputElement;
   password: HTMLInputElement;
 }
+
+export interface LogInFormInterface {
+  email: HTMLInputElement;
+  password: HTMLInputElement;
+}

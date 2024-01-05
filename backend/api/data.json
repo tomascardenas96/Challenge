@@ -1,45 +1,45 @@
 {
   "users": [
     {
+      "id": 1,
+      "userName": "BobJonesHuala",
+      "email": "bob.joneshuala@example.com",
+      "password": "$2a$10$bRk36CUqyMV48tZgMW.RWehV2FednuAkRYuBk.qSJCbRtloSsaKtO",
+      "isLoggedIn": false
+    },
+    {
       "id": 2,
-      "userName": "pedro",
-      "email": "pedro@gmail.com",
-      "password": "pass",
+      "userName": "JuanPerales",
+      "email": "perales@example.com",
+      "password": "$2a$10$q8l9mf9Bu.eO0q8IwCLMWO1/iOgywQPO4xmlwSMYsTjOncerjUCO2",
       "isLoggedIn": false
     },
     {
       "id": 3,
-      "userName": "bob_jones",
-      "email": "bob.jones@example.com",
-      "password": "mySecretPass",
+      "userName": "Tomaco96",
+      "email": "tomaco@gmail.com",
+      "password": "$2a$10$3zbZ9clit1oj28B1eST3T.6KUX2FL/7mzcaO2Heu.k9/DL3BJ3O7i",
       "isLoggedIn": false
     },
     {
       "id": 4,
-      "userName": "Facundo bitar",
-      "email": "facu@gmail.com",
-      "password": "1234",
+      "userName": "TomasCardenas",
+      "email": "tomascar@hotmail.com",
+      "password": "$2a$10$b1h1LWaOdxnEbD0KY1rt5.kTC7Q/4k7ryTuWMj5nVBXUZ5a3M9Qly",
       "isLoggedIn": false
     },
     {
       "id": 5,
-      "userName": "Micaela Aguilar",
-      "email": "mica@gmail.com",
-      "password": "1234",
+      "userName": "Tomi1234",
+      "email": "tomas@gmail.com",
+      "password": "$2a$10$sjorkz1WUZTCC/UvQe5cmOs2C0T398A8Qm8AcNY3FGQlBt.rfzdl6",
       "isLoggedIn": false
     },
     {
       "id": 6,
-      "userName": "Tomas Cardenas",
-      "email": "tomi@gmail.com",
-      "password": "1234",
-      "isLoggedIn": false
-    },
-    {
-      "id": 7,
-      "userName": "Tomas Cardenas",
-      "email": "tomas@gmail.com",
-      "password": "1234",
+      "userName": "Tomasito",
+      "email": "tomasito@example.com",
+      "password": "$2a$10$WWG.nq2/O8.A0NCkaKty4.6LWl.mWmPDttYtaZqS2WX9FTnfvLkpm",
       "isLoggedIn": false
     }
   ]
