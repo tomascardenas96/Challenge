@@ -15,10 +15,17 @@ export class Authentication {
             localStorage.setItem("token", data.token);
             localStorage.setItem("userName", data.userName);
           } else {
-            console.log('Errorrrrrrrr');
           }
         });
     } catch (error) {}
+  }
+
+  logOut() {
+    localStorage.removeItem("token");
+    localStorage.removeItem("userName");
+    setTimeout(() => {
+      window.location.reload();
+    },300);
   }
 
   register(user: RegisterInterface) {

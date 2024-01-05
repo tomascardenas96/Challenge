@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     mainScreen.style.display = "block";
 });
 const user = new Authentication();
+const redirect = new Redirect();
 signUpForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const signUpEmail = signUpForm.email.value;
@@ -39,5 +40,4 @@ logInForm.addEventListener("submit", (e) => {
         window.location.reload();
     }, 300);
 });
-const redirect = new Redirect();
-redirect.redirectToProfile();
+redirect.redirectToHome();
